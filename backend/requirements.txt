@@ -1,13 +1,17 @@
+--extra-index-url https://download.pytorch.org/whl/rocm6.1
+torch==2.6.0+rocm6.1
+torchvision==0.21.0+rocm6.1
+torchaudio==2.6.0+rocm6.1
 pyramid
 pyramid_tm
+waitress
+wsgicors
+hupper
+zope.sqlalchemy
 sqlalchemy
 psycopg2-binary
+transaction
 pydantic
 python-dotenv
 google-generativeai
 transformers
-torch
-hupper
-zope
-.sqlalchemy
-waitress
