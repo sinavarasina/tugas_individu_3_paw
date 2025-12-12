@@ -13,7 +13,7 @@ class ReviewService:
         self.gemini_key = os.getenv("GEMINI_API_KEY")
         if self.gemini_key:
             genai.configure(api_key=self.gemini_key)
-            self.gemini_model = genai.GenerativeModel('gemini-1.5-flash')
+            self.gemini_model = genai.GenerativeModel('gemini-2.0-flash-exp')
 
         device_id = 0 if torch.cuda.is_available() else -1
         device_name = "CPU"

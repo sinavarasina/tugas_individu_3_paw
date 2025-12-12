@@ -9,6 +9,7 @@ setup_env() {
         cat <<EOT >> .env
 APP_PORT=
 DB_URL=
+GEMINI_API_KEY=
 EOT
     fi
 }
