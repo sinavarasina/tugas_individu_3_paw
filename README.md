@@ -36,8 +36,8 @@ Aplikasi untuk menganalisis sentimen dan meringkas ulasan produk menggunakan AI 
 ## Screenshoot
 
 ### UI Landscape
-![Landscape]()
-![Potrait]()
+![Landscape](https://raw.githubusercontent.com/sinavarasina/tugas_individu_3_paw/refs/heads/main/screenshoot/Desktop.png)
+![Potrait](https://raw.githubusercontent.com/sinavarasina/tugas_individu_3_paw/refs/heads/main/screenshoot/IPHONE12.png)
 
 ## Identity
 Nama : Varasina Farmadani
