@@ -5,6 +5,8 @@ from transformers import pipeline
 from src.models import Review
 from src.utils import AppError
 
+_GLOBAL_SENTIMENT_PIPELINE = None
+
 
 class ReviewService:
 
@@ -16,16 +18,21 @@ class ReviewService:
             genai.configure(api_key=self.gemini_key)
             self.gemini_model = genai.GenerativeModel('gemini-2.5-flash')
 
-        device_id = 0 if torch.cuda.is_available() else -1
+        global _GLOBAL_SENTIMENT_PIPELINE
 
-        model_name = "lxyuan/distilbert-base-multilingual-cased-sentiments-student"
+        if _GLOBAL_SENTIMENT_PIPELINE is None:
+            device_id = 0 if torch.cuda.is_available() else -1
+            model_name = "lxyuan/distilbert-base-multilingual-cased-sentiments-student"
 
-        print(f"oading Model: {model_name}")
-        self.sentiment_pipeline = pipeline(
-            "sentiment-analysis",
-            model=model_name,
-            device=device_id
-        )
+            print(f"Loading Model: {model_name}")
+
+            _GLOBAL_SENTIMENT_PIPELINE = pipeline(
+                "sentiment-analysis",
+                model=model_name,
+                device=device_id
+            )
+
+        self.sentiment_pipeline = _GLOBAL_SENTIMENT_PIPELINE
 
     def get_all(self):
         return self.session.query(Review).order_by(Review.id.desc()).all()
