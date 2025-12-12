@@ -1,0 +1,13 @@
+pyramid
+pyramid_tm
+sqlalchemy
+psycopg2-binary
+pydantic
+python-dotenv
+google-generativeai
+transformers
+torch
+hupper
+zope
+.sqlalchemy
+waitress
