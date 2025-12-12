@@ -1,5 +1,7 @@
 # tugas_individu_3_paw
 
+link to this github : https://github.com/sinavarasina/tugas_individu_3_paw
+
 ## Identity
 Nama : Varasina Farmadani
 
