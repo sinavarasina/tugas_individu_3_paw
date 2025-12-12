@@ -1,5 +1,12 @@
 # tugas_individu_3_paw
 
+## Identity
+Nama : Varasina Farmadani
+
+NIM : 123140107
+
+Kelas : Pengembangan Aplikasi Web RB
+
 ---
 
 # Product Review Analyzer 
@@ -41,9 +48,4 @@ Aplikasi untuk menganalisis sentimen dan meringkas ulasan produk menggunakan AI 
 ### UI Potrait (IPHONE12)
 ![Potrait](https://raw.githubusercontent.com/sinavarasina/tugas_individu_3_paw/refs/heads/main/screenshoot/IPHONE12.png)
 
-## Identity
-Nama : Varasina Farmadani
 
-NIM : 123140107
-
-Kelas : Pengembangan Aplikasi Web RB
