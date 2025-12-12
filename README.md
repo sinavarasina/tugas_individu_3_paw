@@ -33,6 +33,12 @@ Aplikasi untuk menganalisis sentimen dan meringkas ulasan produk menggunakan AI 
 * Jalankan "npm run dev"
 * buka websitenya pada link localhost
 
+## Screenshoot
+
+### UI Landscape
+![Landscape]()
+![Potrait]()
+
 ## Identity
 Nama : Varasina Farmadani
 
