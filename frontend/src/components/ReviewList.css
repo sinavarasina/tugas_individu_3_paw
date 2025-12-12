@@ -1,0 +1,14 @@
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.history-list p {
+    text-align: center;
+    padding: 2rem;
+    background: var(--ctp-mantle);
+    border: 1px dashed var(--ctp-surface0);
+    color: var(--ctp-subtext1);
+}

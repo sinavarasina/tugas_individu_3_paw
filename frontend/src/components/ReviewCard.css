@@ -1,0 +1,78 @@
+.review-card {
+    background-color: var(--ctp-surface0);
+    padding: 2rem;
+    text-align: left;
+    border-left: 8px solid var(--ctp-subtext1);
+    border-radius: 0;
+    transition: transform 0.2s ease;
+}
+
+.review-card:hover {
+    transform: translateX(5px);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: var(--ctp-subtext1);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--ctp-base);
+    padding-bottom: 0.5rem;
+}
+
+.product-name {
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: var(--ctp-lavender);
+    letter-spacing: 0.5px;
+}
+
+.review-text {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: var(--ctp-text);
+}
+
+.ai-points {
+    background-color: var(--ctp-base);
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--ctp-text);
+    border: 1px solid var(--ctp-mantle);
+    position: relative;
+}
+
+.ai-points::before {
+    content: "GEMINI AI SUMMARY";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background: var(--ctp-mantle);
+    padding: 2px 8px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: var(--ctp-blue);
+}
+
+.ai-points pre {
+    white-space: pre-wrap;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.border-POSITIVE {
+    border-left-color: var(--ctp-green) !important;
+}
+
+.border-NEGATIVE {
+    border-left-color: var(--ctp-red) !important;
+}
+
+.border-NEUTRAL {
+    border-left-color: var(--ctp-blue) !important;
+}

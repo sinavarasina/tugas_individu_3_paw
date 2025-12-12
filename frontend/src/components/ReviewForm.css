@@ -1,0 +1,62 @@
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--ctp-mantle);
+    padding: 1.5rem;
+    border: 1px solid var(--ctp-surface0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 900px) {
+    .review-form {
+        position: sticky;
+        top: 2rem;
+    }
+}
+
+input,
+textarea {
+    background-color: var(--ctp-base);
+    border: 1px solid var(--ctp-surface0);
+    color: var(--ctp-text);
+    padding: 1rem;
+    font-size: 0.95rem;
+    border-radius: 0;
+    outline: none;
+    transition: all 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--ctp-lavender);
+    background-color: var(--ctp-surface0);
+}
+
+button {
+    background-color: var(--ctp-lavender);
+    color: var(--ctp-base);
+    font-weight: 800;
+    border: none;
+    padding: 1.2rem;
+    cursor: pointer;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: var(--ctp-surface0);
+    color: var(--ctp-subtext1);
+    cursor: not-allowed;
+    transform: none;
+}

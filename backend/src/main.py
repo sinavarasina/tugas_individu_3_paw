@@ -4,6 +4,7 @@ import sys
 from dotenv import load_dotenv
 from waitress import serve
 from wsgicors import CORS
+import hupper
 
 load_dotenv()
 sys.path.append(os.getcwd())
@@ -33,4 +34,5 @@ def main():
 
 
 if __name__ == '__main__':
+    hupper.start_reloader('src.main.main')
     main()
