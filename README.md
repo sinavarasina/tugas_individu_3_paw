@@ -37,6 +37,8 @@ Aplikasi untuk menganalisis sentimen dan meringkas ulasan produk menggunakan AI 
 
 ### UI Landscape
 ![Landscape](https://raw.githubusercontent.com/sinavarasina/tugas_individu_3_paw/refs/heads/main/screenshoot/Desktop.png)
+
+### UI Potrait (IPHONE12)
 ![Potrait](https://raw.githubusercontent.com/sinavarasina/tugas_individu_3_paw/refs/heads/main/screenshoot/IPHONE12.png)
 
 ## Identity
